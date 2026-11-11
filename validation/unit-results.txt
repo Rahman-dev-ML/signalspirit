@@ -1,0 +1,40 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> signal-sprint-mobile@5.2.0 test
+> node --test tests/mobile*.test.mjs tests/simulation.test.mjs
+
+✔ journey continues from level 12 into 13, with no final-level branch (274.96641ms)
+✔ all authored introduction levels remain winnable (775.585686ms)
+✔ 200 consecutive generated dispatches can be completed with ordinary controls (7460.883867ms)
+✔ high levels remain finite, stable and playable (75.213575ms)
+✔ generated pressure increases while safety bounds remain sane (0.426261ms)
+✔ same level is deterministic and neighboring levels vary (1.212839ms)
+✔ generated level restores exact future traffic without dropping its level number (5.989035ms)
+✔ generated levels can be safely controlled with ambulances and pedestrian groups (259.594961ms)
+✔ corrupt and malicious progress cannot introduce invalid level indices or settings (2.162263ms)
+✔ high journey level survives save normalization, with bounded replay history (1.332674ms)
+✔ device save survives reload and preserves independent audio preferences (0.772321ms)
+✔ storage denial leaves the game usable and makes failure visible (0.679607ms)
+✔ campaign: lights obey the player and greens do not auto-close (14.971074ms)
+✔ daily: lights obey the player and greens do not auto-close (5.19876ms)
+✔ endless: lights obey the player and greens do not auto-close (4.883317ms)
+✔ opening crossing roads releases both queues and causes an actual crash (2.505599ms)
+✔ closing first road and waiting until its cars clear avoids a crash (6.939971ms)
+✔ an occupied box never blocks a separately opened green (0.42552ms)
+✔ local waiting countdown decreases and tapping cannot reset it (2.492284ms)
+✔ save restores current lights and waiting deadlines (2.255037ms)
+✔ sidewalk controls remain off road and inside viewport (1.059712ms)
+✔ same-lane vehicles queue with a physical gap and no overlap (63.919923ms)
+✔ three missed ordinary vehicles end the run; emergency costs two (1.121528ms)
+✔ scoring happens once per vehicle, after the rear clears (1.447289ms)
+✔ snapshot restores queues, timer and switch in progress (37.635794ms)
+✔ 60-second shift communicates success or failure and advances explicitly (1.243417ms)
+✔ completion remains recoverable across closing and reopening the game (0.567105ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9147.125316

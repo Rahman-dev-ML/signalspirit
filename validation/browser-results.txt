@@ -1,0 +1,11 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> signal-sprint-mobile@5.1.0 test:browser
+> node tests/mobile-browser.cjs && node tests/mobile-insets.cjs && node tests/mobile-release-smoke.cjs
+
+Independent touch controls, background taps, pause, all modes, responsive hit alignment PASS
+Generated level + safe insets 320 568 PASS
+Generated level + safe insets 390 844 PASS
+Generated level + safe insets 844 390 PASS
+Generated level + safe insets 375 667 PASS
+Production build: boots, touch changes actual lights, pause freezes time, no debug API, no publisher SDK, no external requests; portrait/landscape checked. PASS

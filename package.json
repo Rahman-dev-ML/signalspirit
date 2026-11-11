@@ -1,0 +1,30 @@
+{
+  "name": "signal-sprint-mobile",
+  "version": "5.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test": "node --test tests/mobile*.test.mjs tests/simulation.test.mjs",
+    "android": "npm run build && cap sync android && cap open android",
+    "ios": "npm run build && cap sync ios && cap open ios",
+    "test:browser": "node tests/mobile-browser.cjs && node tests/mobile-insets.cjs && node tests/mobile-release-smoke.cjs",
+    "build:test": "VITE_TEST_API=1 vite build --outDir test-dist"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.3",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/core": "8.5.3",
+    "@capacitor/haptics": "8.0.2",
+    "@capacitor/ios": "8.5.3",
+    "@capacitor/preferences": "8.0.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3",
+    "vite": "8.3.4"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
